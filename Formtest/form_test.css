@@ -1,0 +1,77 @@
+
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 20px;
+    background-color: #0f1d42;
+    color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-section th, .table-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-section th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+
+.description-section p {
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+
+.form-section fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.form-section legend {
+    font-weight: bold;
+}
+
+.form-section label {
+    margin: 1px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="date"],
+.form-section input[type="range"] {
+    width: 25%;
+    padding: 20px;
+    margin: 5px 0 15px 0;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+.demographics {
+    border-color: #aeaeae;
+}
+
+.demographics legend {
+    color: hsl(0, 0%, 56%);
+}
+
+input[type="range"] {
+    width: 25%;
+}
