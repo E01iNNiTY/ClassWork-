@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipotle Ordering Form</title>
+</head>
+<body>
+
+<h2>Chipotle Order Form</h2>
+<form action="/submitorder" method="post">
+
+
+    <fieldset>
+        <legend>Customer Information</legend>
+        
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="order-date">Today's Date:</label>
+        <input type="date" id="order-date" name="order-date" required><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Order Details</legend>
+        
+  
+        <label for="entree">Choose Your Entree:</label>
+        <select id="entree" name="entree" required>
+            <option value="">--Select an Option--</option>
+            <option value="bowl">Bowl</option>
+            <option value="burrito">Burrito</option>
+            <option value="tacos">Tacos</option>
+            <option value="salad">Salad</option>
+        </select><br><br>
+
+
+        <label for="protein">Choose Your Protein:</label>
+        <input list="protein-options" id="protein" name="protein" required>
+        <datalist id="protein-options">
+            <option value="Chicken">
+            <option value="Steak">
+            <option value="Barbacoa">
+            <option value="Carnitas">
+            <option value="Sofritas">
+            <option value="Vegetarian">
+        </datalist><br><br>
+
+        <p>Toppings:</p>
+        <label><input type="checkbox" name="toppings" value="Lettuce"> Lettuce</label><br>
+        <label><input type="checkbox" name="toppings" value="Salsa"> Salsa</label><br>
+        <label><input type="checkbox" name="toppings" value="Guacamole"> Guacamole (extra charge)</label><br>
+        <label><input type="checkbox" name="toppings" value="Cheese"> Cheese</label><br>
+        <label><input type="checkbox" name="toppings" value="Sour Cream"> Sour Cream</label><br><br>
+
+        <p>Spice Level:</p>
+        <label><input type="radio" name="spice-level" value="Mild" required> Mild</label><br>
+        <label><input type="radio" name="spice-level" value="Medium"> Medium</label><br>
+        <label><input type="radio" name="spice-level" value="Hot"> Hot</label><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Special Instructions</legend>
+        <label for="special-instructions">Add any special instructions:</label><br>
+        <textarea id="special-instructions" name="special-instructions" rows="4" cols="50" placeholder="E.g., Extra salsa, light cheese, etc."></textarea><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit Order">
+</form>
+
+</body>
+</html>

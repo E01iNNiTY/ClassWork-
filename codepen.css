@@ -1,0 +1,26 @@
+.term {
+    color: #B8A6A2; 
+}
+
+.definition {
+    color: #B8A6A2; 
+}
+
+
+.dt-algorithmic {
+    background-color: #8E4737 ; 
+    color: black; 
+
+.dt-generalization {
+    background-color: #8E4737; 
+    color: #B8A6A2; 
+}
+
+
+body {
+    margin-left: 20px;
+}
+
+.term, .definition {
+    padding: 10px; 
+}
