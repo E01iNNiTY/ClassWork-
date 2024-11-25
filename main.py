@@ -1,0 +1,5 @@
+print('x' + 'y', sep="*")
+print("a+b+c", "c+b+a", sep="n", end="*")
+print('y', 'x', sep="*")
+print('2' + '1',  end="*")
+print('12', '1', '5' + '2', 'x' + 'y', sep="n", end="*")
