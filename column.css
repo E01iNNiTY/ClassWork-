@@ -1,0 +1,13 @@
+         body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            size: 20px;
+        }
+        .column1 { background-color: red; }
+        .column2 { background-color: green; }
+        .column3 { background-color: blue; }
