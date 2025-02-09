@@ -45,11 +45,11 @@ class CarSelector: # this is creating a python class ith the name CarSelecotr
 if __name__ == "__main__":
     selector = CarSelector()
     selector.show_cars()
-    car_name = input("\nEnter the name of the car you want to select: ").lower
+    car_name = input("\nEnter the name of the car you want to select: ")
     selector.select_car(car_name)
 
 
 tasks = ["Task ", "Task ", "Task "]
 
 for index, tasks in enumerate(tasks, start=1):
-    print(f"{index}, {tasks}")
+     print(f"{index}, {tasks}")
