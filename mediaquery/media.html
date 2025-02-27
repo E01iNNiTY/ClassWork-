@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Image Example</title>
+ <style>
+  
+  picture, img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  </style>
+</head>
+<body>
+  <picture>
+    <source media="(min-width: 801px)" srcset="largeanimal.jpg">
+    <source media="(min-width: 500px) and (max-width: 800px)" srcset="animalmedium.jpg">
+    <source media="(max-width: 499px)" srcset="animalsmall.jpg">
+    <img src="animalsmall.jpg" alt="Responsive Animal">
+  </picture>
+</body>
+</html>
