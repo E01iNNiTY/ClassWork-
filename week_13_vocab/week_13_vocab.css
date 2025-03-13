@@ -1,0 +1,92 @@
+/* Define color variables for a dark theme */
+:root {
+    --background-color: #121212;
+    --primary-text: #e0e0e0;
+    --secondary-text: #aaaaaa;
+    --accent-color: #bb86fc;
+    --heading-color: #ffffff;
+    --code-background: #1e1e1e;
+    --link-color: #bb86fc;
+  }
+  
+  /* Apply a dark background and modern font to the body */
+  body {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--primary-text);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Centered headings with clear hierarchy */
+  h1, h2, h3 {
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  /* Paragraph styling with a slightly softer color */
+  p {
+    font-size: 1em;
+    color: var(--secondary-text);
+    margin: 0 0 20px 0;
+  }
+  
+  /* Code snippet styling with a dark background and accent color */
+  code {
+    background-color: var(--code-background);
+    color: var(--accent-color);
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+  }
+  
+  /* Link styling with a smooth hover transition */
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+  }
+  
+  /* Container to keep content centered and with appropriate max width */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+  
